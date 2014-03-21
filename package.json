@@ -1,0 +1,32 @@
+{
+  "description": "A simple easy-to-use spiritual successor of the command-line utility previously provided by node-http-proxy",
+  "main": "lib/kiss-proxy.js",
+  "name": "kiss-proxy",
+  "version": "1.0.0",
+  "devDependencies": {
+    "grunt-contrib-coffee": "^0.10.1",
+    "grunt": "^0.4.4",
+    "grunt-contrib-clean": "^0.5.0"
+  },
+  "author": "cha0s <cha0s@cha0s.io>",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/cha0s/kiss-proxy.git"
+  },
+  "keywords": [
+    "reverse",
+    "proxy",
+    "http",
+    "websocket",
+    "keep it simple",
+    "v0.10"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "http-proxy": "^1.0.2",
+    "optimist": "^0.6.1"
+  }
+}
