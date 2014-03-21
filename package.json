@@ -2,7 +2,7 @@
   "description": "A simple easy-to-use spiritual successor of the command-line utility previously provided by node-http-proxy",
   "main": "lib/kiss-proxy.js",
   "name": "kiss-proxy",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "devDependencies": {
     "grunt-contrib-coffee": "^0.10.1",
     "grunt": "^0.4.4",

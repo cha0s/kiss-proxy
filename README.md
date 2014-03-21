@@ -31,4 +31,18 @@ options:
   -h, --help          You're staring at it
 ```
 
+Here's an example of what the config file format could look like if you want to do vhost routing:
+
+```
+{
+  "router": {
+    "my-node-site.com": "http://127.0.0.1:24623",
+    "my-other-node-site.com": "http://127.0.0.1:13337"
+  },
+  "defaultRoute": "http://127.0.0.1:8020",
+  "silent": true,
+  "user": "cha0s"
+}
+```
+
 Have fun, and happy devving! <3
