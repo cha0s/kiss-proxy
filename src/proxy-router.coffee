@@ -46,7 +46,7 @@ exports.instantiate = (config) ->
 			res.end '<h1>502 Bad Gateway</h1>'
 			
 			return if config.silent
-			return console.log "No route exists for #{req.headers.host}!"
+			return console.error "No route exists for #{req.headers.host}!"
 
 		req.headers['x-forwarded-for'] = mergeForwardedFor(
 			req.headers['x-forwarded-for']
@@ -62,7 +62,7 @@ exports.instantiate = (config) ->
 				res.end '<h1>502 Bad Gateway</h1>'
 				
 				return if config.silent
-				console.log "While proxying HTTP (#{
+				console.error "While proxying HTTP (#{
 					target
 				}): #{
 					error.stack
@@ -76,7 +76,7 @@ exports.instantiate = (config) ->
 			socket.destroy()
 			
 			return if config.silent
-			return console.log "No route exists for #{req.headers.host}!"
+			return console.error "No route exists for #{req.headers.host}!"
 		
 		req.headers['x-forwarded-for'] = mergeForwardedFor(
 			req.headers['x-forwarded-for']
@@ -91,7 +91,7 @@ exports.instantiate = (config) ->
 				socket.destroy()
 				
 				return if config.silent
-				console.log "While proxying WebSocket (#{
+				console.error "While proxying WebSocket (#{
 					target
 				}): #{
 					error.stack

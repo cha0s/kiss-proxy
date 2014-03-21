@@ -37,7 +37,11 @@ Here's an example of what the config file format could look like if you want to 
 {
   "router": {
     "my-node-site.com": "http://127.0.0.1:24623",
-    "my-other-node-site.com": "http://127.0.0.1:13337"
+    "my-other-node-site.com": "http://127.0.0.1:13337",
+    "regex-works-(also|as well).com": {
+      "address": "http://127.0.0.1:13337",
+      "regex": true
+    }
   },
   "defaultRoute": "http://127.0.0.1:8020",
   "silent": true,
