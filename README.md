@@ -9,6 +9,12 @@ command-line utility like they used to was not a priority.
 With that being said, I give you kiss-proxy, which has all the good mojo from the old original easy to use proxy, and is
 **v0.10 compatible**.
 
+## Install
+
+```
+npm install -g kiss-proxy
+```
+
 ## Using kiss-proxy from the command line
 When you install this package with npm, a kiss-proxy binary will become available to you. Using this binary is easy with some simple options:
 
