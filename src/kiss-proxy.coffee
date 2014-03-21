@@ -71,7 +71,7 @@ else
 args = [config.port]
 args.push config.host if config.host?
 
-fn = -> util.puts "Proxie server now listening on port: #{config.port}"
+fn = -> util.puts "kiss-proxy server now listening on port: #{config.port}"
 args.push fn unless config.silent
 
 proxyServer.listen.apply proxyServer, args
