@@ -2,13 +2,16 @@
   "description": "A simple easy-to-use spiritual successor of the command-line utility previously provided by node-http-proxy",
   "main": "lib/kiss-proxy.js",
   "name": "kiss-proxy",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "devDependencies": {
     "grunt-contrib-coffee": "^0.10.1",
     "grunt": "^0.4.4",
     "grunt-contrib-clean": "^0.5.0"
   },
   "author": "cha0s <cha0s@cha0s.io>",
+  "bin": {
+    "kiss-proxy": "./bin/kiss-proxy",
+  },
   "repository": {
     "type": "git",
     "url": "http://github.com/cha0s/kiss-proxy.git"
