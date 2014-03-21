@@ -10,7 +10,7 @@
   },
   "author": "cha0s <cha0s@cha0s.io>",
   "bin": {
-    "kiss-proxy": "./bin/kiss-proxy",
+    "kiss-proxy": "./bin/kiss-proxy"
   },
   "repository": {
     "type": "git",
