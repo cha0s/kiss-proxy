@@ -1,6 +1,7 @@
 #!/usr/local/bin/coffee
 
 fs = require 'fs'
+url = require 'url'
 util = require 'util'
 
 httpProxy = require 'http-proxy'
@@ -44,6 +45,11 @@ if argv.config
 		
 		util.puts "While parsing configuration: #{error.stack}"
 		process.exit 1
+
+if argv.target and not url.parse(argv.target).slashes
+
+    util.puts "Missing URL protocol: #{argv.target}"
+    process.exit 1
 
 config ?= {}
 config.host = argv.host ? config.host
